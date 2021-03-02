@@ -100,7 +100,7 @@ bool QueryTileProvider::AllowQueryTileSuggestions(
   bool is_search_provider_enabled =
       default_provider &&
       default_provider->GetEngineType(
-          template_url_service->search_terms_data()) == SEARCH_ENGINE_GOOGLE;
+          template_url_service->search_terms_data()) == SEARCH_ENGINE_DUCKDUCKGO;
   if (!is_search_provider_enabled)
     return false;
 

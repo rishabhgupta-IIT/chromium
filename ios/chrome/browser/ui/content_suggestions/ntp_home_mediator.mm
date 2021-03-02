@@ -553,7 +553,7 @@ const char kNTPHelpURL[] =
   if (defaultURL) {
     showLogo = defaultURL->GetEngineType(
                    self.templateURLService->search_terms_data()) ==
-               SEARCH_ENGINE_GOOGLE;
+      SEARCH_ENGINE_DUCKDUCKGO;
   }
   [self.consumer setLogoIsShowing:showLogo];
 }

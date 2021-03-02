@@ -99,7 +99,7 @@ bool IsSearchEngineGoogle(const TemplateURL* template_url,
   return template_url && client &&
          template_url->GetEngineType(
              client->GetTemplateURLService()->search_terms_data()) ==
-             SEARCH_ENGINE_GOOGLE;
+            SEARCH_ENGINE_DUCKDUCKGO;
 }
 
 }  // namespace

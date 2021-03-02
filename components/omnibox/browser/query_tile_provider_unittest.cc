@@ -23,7 +23,7 @@ class QueryTileProviderTest : public testing::Test,
     turl_model->Load();
 
     // Verify that Google is the default search provider.
-    ASSERT_EQ(SEARCH_ENGINE_GOOGLE,
+    ASSERT_EQ(SEARCH_ENGINE_DUCKDUCKGO,
               turl_model->GetDefaultSearchProvider()->GetEngineType(
                   turl_model->search_terms_data()));
 

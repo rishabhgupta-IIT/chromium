@@ -205,7 +205,7 @@ void BaseSearchProvider::AppendSuggestClientToAdditionalQueryParams(
     metrics::OmniboxEventProto::PageClassification page_classification,
     TemplateURLRef::SearchTermsArgs* search_terms_args) {
   // Only append the suggest client query param for Google template URL.
-  if (template_url->GetEngineType(search_terms_data) != SEARCH_ENGINE_GOOGLE)
+  if (template_url->GetEngineType(search_terms_data) != SEARCH_ENGINE_DUCKDUCKGO)
     return;
 
   if (page_classification == metrics::OmniboxEventProto::CHROMEOS_APP_LIST) {
@@ -421,7 +421,7 @@ bool BaseSearchProvider::CanSendURL(
   // suggest. (Currently only the prepopulated Google provider supports it.)
   if (template_url == nullptr ||
       !template_url->SupportsReplacement(search_terms_data) ||
-      template_url->GetEngineType(search_terms_data) != SEARCH_ENGINE_GOOGLE)
+      template_url->GetEngineType(search_terms_data) != SEARCH_ENGINE_DUCKDUCKGO)
     return false;
 
   if (!current_page_url.is_valid())

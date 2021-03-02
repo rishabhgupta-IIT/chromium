@@ -98,7 +98,7 @@ class LocalHistoryZeroSuggestProviderTest
         default_provider);
 
     // Verify that Google is the default search provider.
-    ASSERT_EQ(SEARCH_ENGINE_GOOGLE,
+    ASSERT_EQ(SEARCH_ENGINE_DUCKDUCKGO,
               default_search_provider()->GetEngineType(
                   client_->GetTemplateURLService()->search_terms_data()));
   }
@@ -414,7 +414,7 @@ TEST_F(LocalHistoryZeroSuggestProviderTest, DefaultSearchProvider) {
   template_url_service->SetUserSelectedDefaultSearchProvider(
       other_search_provider);
   // Verify that Google is not the default search provider.
-  ASSERT_NE(SEARCH_ENGINE_GOOGLE,
+  ASSERT_NE(SEARCH_ENGINE_DUCKDUCKGO,
             default_search_provider()->GetEngineType(
                 template_url_service->search_terms_data()));
   StartProviderAndWaitUntilDone();

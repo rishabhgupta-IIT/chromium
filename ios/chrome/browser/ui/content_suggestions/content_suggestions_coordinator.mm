@@ -227,7 +227,7 @@
   BOOL isGoogleDefaultSearchProvider =
       defaultURL &&
       defaultURL->GetEngineType(templateURLService->search_terms_data()) ==
-          SEARCH_ENGINE_GOOGLE;
+    SEARCH_ENGINE_DUCKDUCKGO;
 
   self.contentSuggestionsMediator = [[ContentSuggestionsMediator alloc]
              initWithContentService:contentSuggestionsService

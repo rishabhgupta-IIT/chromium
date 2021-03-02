@@ -30,7 +30,7 @@ bool DefaultSearchProviderIsGoogle(
     return false;
   return default_provider->GetEngineType(
              template_url_service->search_terms_data()) ==
-         SearchEngineType::SEARCH_ENGINE_GOOGLE;
+         SearchEngineType::SEARCH_ENGINE_DUCKDUCKGO;
 }
 
 }  // namespace search

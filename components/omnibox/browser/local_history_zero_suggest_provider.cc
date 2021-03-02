@@ -127,7 +127,7 @@ void LocalHistoryZeroSuggestProvider::Start(const AutocompleteInput& input,
   if (!template_url_service ||
       !template_url_service->GetDefaultSearchProvider() ||
       template_url_service->GetDefaultSearchProvider()->GetEngineType(
-          template_url_service->search_terms_data()) != SEARCH_ENGINE_GOOGLE) {
+          template_url_service->search_terms_data()) != SEARCH_ENGINE_DUCKDUCKGO) {
     return;
   }
 

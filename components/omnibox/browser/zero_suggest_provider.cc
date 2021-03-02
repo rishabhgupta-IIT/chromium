@@ -124,7 +124,7 @@ bool RemoteNoUrlSuggestionsAreAllowed(
       template_url_service->GetDefaultSearchProvider();
   return default_provider &&
          default_provider->GetEngineType(
-             template_url_service->search_terms_data()) == SEARCH_ENGINE_GOOGLE;
+             template_url_service->search_terms_data()) == SEARCH_ENGINE_DUCKDUCKGO;
 }
 
 }  // namespace

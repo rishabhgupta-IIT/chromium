@@ -76,7 +76,7 @@
   self.mediator.defaultSearchEngineIsGoogle =
       templateURLService && templateURLService->GetDefaultSearchProvider() &&
       templateURLService->GetDefaultSearchProvider()->GetEngineType(
-          templateURLService->search_terms_data()) == SEARCH_ENGINE_GOOGLE;
+          templateURLService->search_terms_data()) == SEARCH_ENGINE_DUCKDUCKGO;
 
   self.popupViewController = [[OmniboxPopupViewController alloc] init];
   self.popupViewController.incognito =

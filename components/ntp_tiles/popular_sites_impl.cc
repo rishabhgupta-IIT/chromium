@@ -88,7 +88,7 @@ std::string GetDefaultSearchEngineCountryCode(
     bool is_google_search_engine =
         default_provider->GetEngineType(
             template_url_service->search_terms_data()) ==
-        SearchEngineType::SEARCH_ENGINE_GOOGLE;
+        SearchEngineType::SEARCH_ENGINE_DUCKDUCKGO;
 
     if (is_google_search_engine) {
       GURL search_url = default_provider->GenerateSearchURL(
